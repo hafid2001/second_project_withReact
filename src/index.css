@@ -14,6 +14,41 @@
   justify-content: center;
   gap: 20px; /* space between items */
 }
+.day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* space between items */
+}
+span {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  margin-right: 6px;
+  transition: color 0.3s ease;
+}
+
+/* Capitalize first letter for cleaner text */
+span::first-letter {
+  text-transform: capitalize;
+}
+
+/* Color variations */
+span.today {
+  color: #0077ff; /* Blue for today */
+  font-weight: 600;
+}
+
+span.future {
+  color: #28a745; /* Green for future days */
+  font-weight: 600;
+}
+
+span.past {
+  color: #dc3545; /* Red for past days */
+  font-weight: 600;
+}
 
 .btn {
   width: 50px;
